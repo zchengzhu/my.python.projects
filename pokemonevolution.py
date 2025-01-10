@@ -5,10 +5,10 @@
 #Init
 import random
 #Global Variables
-pokemon_level = 0
-pokemon_name = "Ghastly"
-day = 1
-battle_record = 0
+pokemon_level = 0 #What pokemon level is currently
+pokemon_name = "Ghastly" #What pokemon the player(You) currently have
+day = 1 # What day is currently
+battle_record = 0 #Battle records of how many battles the player(You) have gone through
 #Functions
 def draw_ghastly():
     print(""" ⠀⠀⠀⠀⠀⠀⠀⠀             ⠀⠀⢀⣤⠶⠒⢦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -107,16 +107,16 @@ def draw_gengar():
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠛⠛⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 """)
 
-def train():
+def train(): #System gives 1 level each time the pokemon is trained
     global pokemon_level
     pokemon_level = pokemon_level + 1
     print("Your Pokemon has levled up once!")
     print("Your Pokemon is now level: " + str(pokemon_level))
 
-def gym_battle():
+def gym_battle(): # System gives a gym battle for the pokemon to have a chance to level up
     global pokemon_level
     print("You entered a gym")
-    outcome = random.randint(1,2) #50% chance to win or lose
+    outcome = random.randint(1,2) #50% chance to win or lose #50/50 chance of winning the gym battle
     if outcome == 1:
         print("You win!")
         print("Your Pokemon levled up twice!")
@@ -127,13 +127,13 @@ def gym_battle():
         print("Your Pokemon is still level: " + str(pokemon_level))
         print("Your Pokemon needs to heal, go to the Pokemon ceneter to heal up")
 
-def rest():
+def rest(): # Shows player(You) the data of the pokemon, day, level, and what it looks like
     global day
     global pokemon_name
     global pokemon_level
     print(""" Your Pokemon is resting
 Here is your Pokemon stats""")
-    print("Your Pokemon's name: " + str(pokemon_name))
+    print("Your Pokemon's name: " + str(pokemon_name)) 
     if pokemon_name == "Ghastly":
         draw_ghastly()
     if pokemon_name == "Hunter":
@@ -143,15 +143,15 @@ Here is your Pokemon stats""")
     print("Your Pokemon's level is: " + str(pokemon_level))
     print("The day is : " + str(day))
 
-def evolve():
+def evolve(): # Shows the player(You) if the pokemon can or cannot evolve yet
     global pokemon_name
-    if pokemon_level == 25 or pokemon_level == 26:
+    if pokemon_level == 25 or pokemon_level == 26: #Pokemon will be able to evolve
         print("Congrats!")
-        print("Your Ghastly evolved into a Hunter!")
+        print("Your Ghastly evolved into a Hunter!") #What they evolve to
         pokemon_name = "Hunter"
-    if pokemon_level == 38 or pokemon_level == 39:
+    if pokemon_level == 38 or pokemon_level == 39: #Pokemon will be able to evolve
         print("Congrats!")
-        print("Your Hunter evolved into a Gengar!")
+        print("Your Hunter evolved into a Gengar!") #What they evolve to
         pokemon_name = "Gengar"
 #Main
 while True:

@@ -16,4 +16,10 @@ Summary: This program makes you guess a number that the system will randomly pic
 Key Features:
 Gives the player a fun time trying to guess a number that is randomized according to the code
 
-Project 4: 
+Project 4: Pokemon Evolutions
+Summary: This program will allow you to have a pokemon and let you train it, make it battle, and see what other things it can do
+Key Features: Pokemon will be able to evolve, level up, battle gyms, and train. The program will show the day time, which is how much turns it took you to fully evolve your pokemon
+
+Project 5: Simple Calculator
+Summary: This program will allow you to add, subtract, multiply, and divide with the numbers you the player will enter in and the program will solve it for you
+Key Features: The program can only add, subtract, multiply, and divide 2 numbers.

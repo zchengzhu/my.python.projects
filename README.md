@@ -23,3 +23,7 @@ Key Features: Pokemon will be able to evolve, level up, battle gyms, and train. 
 Project 5: Simple Calculator
 Summary: This program will allow you to add, subtract, multiply, and divide with the numbers you the player will enter in and the program will solve it for you
 Key Features: The program can only add, subtract, multiply, and divide 2 numbers.
+
+Project 6: CREATETASK
+Summary: This program allows the user to pick a group of animals from a list to find out their chosen animal from that list
+Key Features: The program have multiple options, in two different languages, allows the user to see their list and have the program select their chosen animal from that list, and allows the user to repeat the game constantly

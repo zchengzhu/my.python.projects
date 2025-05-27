@@ -3,32 +3,32 @@
 
 import time
 import random
-FlyingLong = ["albatross", "crane", "flamingo", "pelican", "crane fly", "dragonfly", "jacana", "ibex", "bat", "flying squirrel"]
+FlyingLong = ["albatross", "crane", "flamingo", "pelican", "crane fly", "dragonfly", "jacana", "ibex", "bat", "flying squirrel"] #This is a list of the flying long legged animals
 
-FlyingShort = ["Hummingbird", "Bumblebee", "Swallow ", "Dragonfly ", "Finch", "Chickadee", "Moth", "Kingfisher", "Nighthawk", "Pipistrelle Bat"]
+FlyingShort = ["Hummingbird", "Bumblebee", "Swallow ", "Dragonfly ", "Finch", "Chickadee", "Moth", "Kingfisher", "Nighthawk", "Pipistrelle Bat"] #This is a list of the flying short legged animals
 
-NonLong = ["Giraffe", "Camel", "Ostrich", "Gazelle", "Horse ", "Kangaroo", "Elephant", "Moose", "Llama", "Elk"]
+NonLong = ["Giraffe", "Camel", "Ostrich", "Gazelle", "Horse ", "Kangaroo", "Elephant", "Moose", "Llama", "Elk"] #This is a list of the non flying long legged animals
 
-NonShort = ["Dachshund", "Corgi", "Penguin", "Turtle", "Hedgehog", "Bulldog", "Kangaroo Rat", "Pygmy Hippo", "Chinchilla", "Warthog"]
+NonShort = ["Dachshund", "Corgi", "Penguin", "Turtle", "Hedgehog", "Bulldog", "Kangaroo Rat", "Pygmy Hippo", "Chinchilla", "Warthog"] #This is a list of the non flying and short legged animals
 
-sFlyingLong = ["albatros", "grulla", "flamenco", "pelícano", "típula grulla", "libélula", "jacana", "íbice", "murciélago", "ardilla voladora"]
+sFlyingLong = ["albatros", "grulla", "flamenco", "pelícano", "típula grulla", "libélula", "jacana", "íbice", "murciélago", "ardilla voladora"] #This is a list of the flying long legged animals, but in spanish
 
-sFlyingShort = ["Colibrí", "Abejorro", "Golondrina", "Libélula", "Pinzón", "Carbonero", "Polilla", "Martín Pescador", "Choquete", "Murciélago Pipistrelle"]
+sFlyingShort = ["Colibrí", "Abejorro", "Golondrina", "Libélula", "Pinzón", "Carbonero", "Polilla", "Martín Pescador", "Choquete", "Murciélago Pipistrelle"] #This is a list of the flying short legged animals, but in spanish
 
-sNonLong = ["Jirafa", "Camello", "Avestruz", "Gacela", "Caballo", "Canguro", "Elefante", "Alce", "Llama", "Venado"]
+sNonLong = ["Jirafa", "Camello", "Avestruz", "Gacela", "Caballo", "Canguro", "Elefante", "Alce", "Llama", "Venado"] #This is a list of the non flying long legged animals, but in spanish
 
-sNonShort = ["Perro salchicha", "Corgi", "Pingüino", "Tortuga", "Erizo", "Bulldog", "Rata canguro", "Hipopótamo pigmeo", "Chinchilla", "Facoquero"]
+sNonShort = ["Perro salchicha", "Corgi", "Pingüino", "Tortuga", "Erizo", "Bulldog", "Rata canguro", "Hipopótamo pigmeo", "Chinchilla", "Facoquero"] #This is a list of the non flying and short legged animals, but in spanish 
 
 
-def tf():
+def tf(): #This is a function used for the english verison of the game
         global FlyingLong
         global FlyingShort
         global NonLong
         global NonShort
         while True:
-                print("Welcome to your favorite animal picker!")
+                print("Welcome to your favorite animal picker!") #Introduces the game to the user
                 print("""
-        Please choose an option:
+        Please choose an option: #This is the options that users can select through to pick what animal that they want to look into and select as their favorite animal
                 A) Flying Long Leg Animal
                 B) Flying Short Leg Animal
                 C) Non Flying Long Leg Animal
@@ -36,28 +36,28 @@ def tf():
                 E) Quit
                                    """)
                 user_input = str(input("(A,B,C,D,E) "))
-                if user_input.upper() == "A":
+                if user_input.upper() == "A": #Option for flying short legged animal and selection of user
                         for i in range(3):
                                 print("Printing..")
                                 time.sleep(2)
                         print(" ")
-                        print("These are some flying long leg animals")
+                        print("These are some flying long leg animals") #Prints out the list of the flying long legged animals
                         for animal in (FlyingLong):
                                 print(animal)
                         print("")
-                        one = input("Do you want to spin for your chosen animal?: Y or N ")
+                        one = input("Do you want to spin for your chosen animal?: Y or N ") #Asks user if they want to select their chosen animal from the animals within the list
                         if one.upper() == "Y":
                                 random_one = random.choice(FlyingLong)
                                 for i in range(3):
-                                        print("Spinning..")
+                                        print("Spinning..") #Shows a spinning command to simluate a random flying long legged animal is being chosen
                                         time.sleep(2)
-                                print("Your favorite animal is a " + random_one)
+                                print("Your favorite animal is a " + random_one) #Prints out the user's chosen animal
                         if one.upper() == "N":
                                 print(" ")
 
-                elif user_input.upper() == "B":
+                elif user_input.upper() == "B": #Option for flying short legged animal and selection of user
                         for i in range(3):
-                                print("Printing..") 
+                                print("Printing..") #Shows a printing command to simluate a random flying long legged animal is being chosen
                                 time.sleep(2)
                         print(" ")
                         print("These are some flying short leg animals")
@@ -74,7 +74,7 @@ def tf():
                         if two.upper() == "N": #Does nothing if selected N
                                 print(" ")
 
-                elif user_input.upper() == "C": #Option for non flying long leg animal
+                elif user_input.upper() == "C": #Option for non flying long leg animal and selection of user
                         for i in range(3):
                                 print("Printing..")#Shows a printing  command to simluate the code is printing
                                 time.sleep(2)
@@ -93,7 +93,7 @@ def tf():
                         if three.upper() == "N":#Does nothing if selected N
                                 print(" ")
 
-                elif user_input.upper() == "D": #Option for non flying short leg animal
+                elif user_input.upper() == "D": #Option for non flying short leg animal and selection of user
                         for i in range(3):
                                 print("Printing..")#Shows a printing  command to simluate the code is printing
                                 time.sleep(2)
@@ -118,7 +118,7 @@ def tf():
                 else:
                         print("Invalid option. Try again.") #Makes sure that there will be only one option for the answer choice to be seclected
 
-def ff():
+def ff(): #Everything else is the same with the spanish verison, but in different language
         global sFlyingLong
         global sFlyongShort
         global sNonLong
@@ -213,8 +213,8 @@ def ff():
                 else:
                         print("Invalid option. Try again.")
 def thef(language):
-        if language == "English":
-                tf()
-        elif language == "Spanish":
-                ff()
-thef(input("What language do you what to do this in? English or Spanish "))
+        if language == "English": #User selection of english verison
+                tf() #Function of english verison
+        elif language == "Spanish": #User selection of spanish verison 
+                ff() #Function of spanish verison
+thef(input("What language do you what to do this in? English or Spanish ")) #Asks user if they want to play in either english or spanish verison of the game 

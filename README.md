@@ -27,3 +27,7 @@ Key Features: The program can only add, subtract, multiply, and divide 2 numbers
 Project 6: CREATETASK
 Summary: This program allows the user to pick a group of animals from a list to find out their chosen animal from that list
 Key Features: The program have multiple options, in two different languages, allows the user to see their list and have the program select their chosen animal from that list, and allows the user to repeat the game constantly
+
+Project 7: DogBreed
+Summary: This program allows you to find out what kind of dog base on size ranging from tiny to large within a list of 100 dogs
+Key Features: This program have options within a function, allows the user to have a wild range of dogs that they can see from their selected option
